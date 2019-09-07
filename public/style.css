@@ -1,0 +1,160 @@
+:root {
+  --first-color: #364f6b;
+  --second-color: #3fc1c9;
+  --third-color: #f5f5f5;
+  --fourth-color: #fc5185;
+}
+
+body {
+  background: var(--first-color);
+  color: var(--first-color);
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  background-color: var(--third-color);
+  margin: 3% auto auto;
+  padding: 10px;
+  max-width: 350px;
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.container hr {
+  opacity: 0.3;
+}
+
+header h1 {
+  color: var(--second-color);
+  margin: 15px auto 25px;
+  text-align: center;
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+  margin: 0 15px 30px;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  position: relative;
+  padding: 4px;
+  font-size: 18px;
+  line-height: 2;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+ul li:hover {
+  color: #666;
+}
+
+ul li span {
+  position: absolute;
+  color: red;
+  opacity: 0;
+  top: 30%;
+  right: -100%;
+  transition: all 0.3s;
+}
+
+ul li:hover span {
+  opacity: 1;
+  right: 0;
+}
+
+.container button {
+  display: block;
+  margin: 40px auto -40px;
+  padding: 0;
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+  font-family: sans-serif;
+  font-size: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.4s;
+}
+
+.container button:hover {
+  box-shadow: 1px 1px 20px 1.5px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid var(--first-color);
+  background: none;
+  padding: 2px 4px;
+  outline: none;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+input[type="text"] {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+}
+
+div#timeInputDiv {
+  text-align: center;
+}
+
+input[type="date"],
+input[type="time"] {
+  text-align: left;
+  font-size: 13.5px;
+  margin: 0 auto;
+  width: 38%;
+}
+
+input:focus {
+  border-color: var(--fourth-color);
+}
+
+.hide {
+  display: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+@media (max-width: 360px) {
+  .container {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  ul li {
+    padding: 2px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  ul li span {
+    top: 20%;
+  }
+
+  input {
+    padding: 1px 3px;
+    font-size: 15px;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+
+  input[type="date"],
+  input[type="time"] {
+    width: 80%;
+  }
+}

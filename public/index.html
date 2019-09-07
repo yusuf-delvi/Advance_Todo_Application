@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo app</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/c9283e95d1.js"></script>
+  <!-- Style file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p id="errDisplay" class="hide">Show error message</p>
+
+  <div class="container">
+    <header>
+      <h1>To do List</h1>
+    </header>
+
+    <hr>
+
+    <ul id="ul">
+    </ul>
+
+    <input id="todoInput" type="text" name="todoInput" placeholder="Enter todo...">
+
+    <div id="timeInputDiv" class="hide">
+      <input id="dateInput" type="date" name="date" min="2019-08-01" max="2025-01-01">
+      <input id="timeInput" type="time" name="time">
+    </div>
+
+    <button id="btn">+</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script src="client.js"></script>
+</body>
+
+</html>
