@@ -4,7 +4,7 @@
   "description": "A Todo Application. Stores your Todo and remind you at given Time.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "yusuf-delvi",
   "license": "ISC",
