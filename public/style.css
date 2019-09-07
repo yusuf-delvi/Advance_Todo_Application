@@ -131,7 +131,6 @@ input:focus {
 @media (max-width: 360px) {
   .container {
     margin: 0;
-    border-radius: 0;
   }
 
   ul li {
@@ -150,11 +149,6 @@ input:focus {
   }
 
   input[type="text"] {
-    width: 80%;
-  }
-
-  input[type="date"],
-  input[type="time"] {
     width: 80%;
   }
 }
